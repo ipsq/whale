@@ -5,8 +5,9 @@ Open source data analysis and manipulation tool including estimation of many dif
 ## Features
 The following classes, models and functionality are planned to become part of this library. 
 
-### Classes
+### Data
   * DataFrame
+    * `readCSV`, `readExcel`, ``
   * Series
   * Index
     * PeriodIndex
@@ -31,3 +32,4 @@ The following classes, models and functionality are planned to become part of th
     * ARIMA
     * SARIMAX
     * VARMAX
+    * DynamicFactor
