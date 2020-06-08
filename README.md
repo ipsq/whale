@@ -7,7 +7,7 @@ The following classes, models and functionality are planned to become part of th
 
 ### Data
   * DataFrame
-    * `readCSV`, `readExcel`, ``
+    * `abs`, `copy`, `corr`, `count`, `cov`, `divide`, `dot`, `drop`, `dropna`, `filterRows`, `filterCols`, `first`, `head`, `max`, `mean`, `median`, `min`, `mode`, `rank`, `std`, `tail`, `take`, `truncate`, `var`, and more
   * Series
   * Index
     * PeriodIndex
