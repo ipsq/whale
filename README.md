@@ -5,31 +5,48 @@ Open source data analysis and manipulation tool including estimation of many dif
 ## Features
 The following classes, models and functionality are planned to become part of this library. 
 
-### Data
+### Classes
   * DataFrame
-    * `abs`, `copy`, `corr`, `count`, `cov`, `divide`, `dot`, `drop`, `dropna`, `filter`, `filter`, `first`, `head`, `max`, `mean`, `median`, `min`, `mode`, `rank`, `std`, `tail`, `take`, `truncate`, `var`, and more
-  * Series
-  * Index
-    * PeriodIndex
-    * DatetimeIndex
-    * TimedeltaIndex
-    * MultiIndex
-    * IntervalIndex
-    * CategoricalIndex
-    * RangeIndex
-  * Window 
-    * RollingWindow
-    * ExpandingWindow
-    * ExponentiallyWeightedMovingWindow
-  * Resample
-  * GroupBy
+    * fully typed by using tuples and case classes (see [typelevel/frameless](https://github.com/typelevel/frameless))
+    * backend agnostic 
+      * support for multiple backends, with simple default implementation (Apache Spark, etc.)
+    * lazy computations
+    * aggregate functionality
+      * GroupBy
+      * Window
+        * RollingWindow
+        * ExpandingWindow
+        * ExponentiallyWeightedMovingWindow
+    * optionally indexed
+      * SeqIndex (simple list based indexing)
+      * PeriodIndex
+      * DatetimeIndex
+      * TimedeltaIndex
+      * MultiIndex
+      * IntervalIndex
+      * CategoricalIndex
+      * RangeIndex
+  * Series 
+    * single column of DataFrame
+    * single type parameter
+    * optionally indexed
+  * Vector
+    * single column matrix (N x 1)
+  * Matrix
+    * typed operations (like Breeze)
+    * backend agnostic 
+      * support for multiple backends, with simple default implementation (Breeze, etc.)
+    * linear algebra functionality (see [numpy.linalg](https://numpy.org/doc/stable/reference/routines.linalg.html))
  
 ### Models
-  * Time Series Analysis
+  * Regression analysis
+    * OLS
+    * WLS
+    * GLS
+  * Time-series analysis
     * AR
     * VAR
     * ARMA
     * ARIMA
     * SARIMAX
     * VARMAX
-    * DynamicFactor
