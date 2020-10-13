@@ -54,3 +54,6 @@ The following classes, models and functionality are planned to become part of th
     * ARIMA
     * SARIMAX
     * VARMAX
+    
+### Implementation details
+  * Require numeric types to match in order to allow arithmic operations. Like [typelevel/frameless](https://github.com/typelevel/frameless), make use of `.cast[Double]` in order to allow multiplication of an `Vector[Int]` with a `Vector[Double]`. 
