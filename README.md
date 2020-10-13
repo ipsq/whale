@@ -26,17 +26,21 @@ The following classes, models and functionality are planned to become part of th
       * IntervalIndex
       * CategoricalIndex
       * RangeIndex
+    * immutable
   * Series 
     * single column of DataFrame
     * single type parameter
     * optionally indexed
+    * immutable
   * Vector
     * single column matrix (N x 1)
+    * immutable
   * Matrix
     * typed operations (like Breeze)
     * backend agnostic 
       * support for multiple backends, with simple default implementation (Breeze, etc.)
     * linear algebra functionality (see [numpy.linalg](https://numpy.org/doc/stable/reference/routines.linalg.html))
+    * immutable
  
 ### Models
   * Regression analysis
